@@ -1,6 +1,5 @@
 import './App.css';
 import { IdCard } from './components/IdCard/IdCard';
-import { useState } from 'react/cjs/react.production.min';
 
 const idCards = [
   {

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.idCard {
+  display: flex;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.profilePicture {
+  padding: 5px;
+}
+
+.idCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
