@@ -1,5 +1,6 @@
 import './App.css';
 import { IdCard } from './components/IdCard/IdCard';
+import { Greetings } from './components/Greetings/Greetings';
 
 const idCards = [
   {
@@ -23,9 +24,15 @@ const idCards = [
 function App() {
   return (
     <div className="App">
+      <h1>IdCard</h1>
       {idCards.map((idCard) => {
         return <IdCard idInformation={idCard} />;
       })}
+      <h1>Greetings</h1>
+      <Greetings lang="de">Harry</Greetings>
+      <Greetings lang="fr">Hermione</Greetings>
+      <Greetings lang="es">Ronald</Greetings>
+      <Greetings lang="en">Hagrid</Greetings>
     </div>
   );
 }
