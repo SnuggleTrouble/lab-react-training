@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { IdCard } from './components/IdCard/IdCard';
+import { useState } from 'react/cjs/react.production.min';
+
+const idCards = [
+  {
+    lastName: 'Plotter',
+    firstName: 'Harry',
+    gender: 'male',
+    height: 178,
+    birth: new Date('1992-07-14'),
+    picture: 'https://randomuser.me/api/portraits/men/44.jpg',
+  },
+  {
+    lastName: 'Gronger',
+    firstName: 'Hermione',
+    gender: 'female',
+    height: 172,
+    birth: new Date('1992-03-14'),
+    picture: 'https://randomuser.me/api/portraits/women/44.jpg',
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {idCards.map((idCard) => {
+        return <IdCard idInformation={idCard} />;
+      })}
     </div>
   );
 }
