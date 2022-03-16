@@ -20,15 +20,24 @@ code {
 .idCard {
   display: flex;
   border: 1px solid black;
-  margin: 15px;
+  margin: 10px;
+  padding: 5px;
 }
 
 .profilePicture {
-  padding: 5px;
+  padding: 1px;
 }
 
 .idCardContainer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.RGBDiv {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
 }

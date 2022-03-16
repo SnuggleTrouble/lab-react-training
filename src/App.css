@@ -40,5 +40,5 @@
 h1 {
   display: flex;
   flex-direction: row;
-  margin: 15px;
+  margin: 18px 0 18px 10px;
 }
