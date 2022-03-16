@@ -21,22 +21,19 @@ export function CreditCard({
     image = MasterCardImage;
   }
   return (
-    <div className="creditCard" style={colorStyles}>
       <div className='cards'>
+    <div className="creditCard" style={colorStyles}>
         <img className="cardImage" src={image} alt="credit card" />
-        <div>
-          <p className="cardNumber">
-            **** **** **** {number.slice(number.length - 4)}
-          </p>
-        </div>
-        <div>
-          <span>
-            Expires {expirationMonth}/{expirationYear}
-          </span>
-          <span className="nameOfBank">{bank}</span>
-        </div>
+      <div className="cardNumber">
+        <p>**** **** **** {number.slice(number.length - 4)}</p>
+      </div>
+      <div className="cardInfo">
+        <span>
+          Expires {expirationMonth}/{expirationYear} {bank}
+        </span>
         <p className="cardOwner">{owner}</p>
       </div>
+    </div>
     </div>
   );
 }

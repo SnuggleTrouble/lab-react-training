@@ -42,31 +42,45 @@ code {
   padding: 30px;
 }
 
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+  gap: 20px;
+}
+
 .creditCard {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-around;
   border: 1px solid black;
-  border-radius: 10px;
-  width: 350px;
+  border-radius: 15px;
+  width: 380px;
   height: 180px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .cardImage {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 50px;
-  padding: 15px;
 }
 
 .cardNumber {
   font-size: 28px;
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
-.nameOfBank {
-  padding-left: 20px;
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .cardOwner {
