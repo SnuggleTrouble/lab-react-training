@@ -1,6 +1,7 @@
 import './App.css';
 import { IdCard } from './components/IdCard/IdCard';
 import { Greetings } from './components/Greetings/Greetings';
+import { Random } from './components/Random/Random';
 
 const idCards = [
   {
@@ -33,6 +34,9 @@ function App() {
       <Greetings lang="fr">Hermione</Greetings>
       <Greetings lang="es">Ronald</Greetings>
       <Greetings lang="en">Hagrid</Greetings>
+      <h1>Random</h1>
+      <Random min={1} max={6}/>
+      <Random min={1} max={100}/>
     </div>
   );
 }
