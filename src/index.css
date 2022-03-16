@@ -39,5 +39,36 @@ code {
   justify-content: center;
   border: 1px solid black;
   margin: 10px;
-  padding: 5px;
+  padding: 30px;
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 350px;
+  height: 180px;
+  padding: 10px;
+}
+
+.cardImage {
+  display: flex;
+  width: 50px;
+  padding: 15px;
+}
+
+.cardNumber {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.nameOfBank {
+  padding-left: 20px;
+}
+
+.cardOwner {
+  display: flex;
 }
